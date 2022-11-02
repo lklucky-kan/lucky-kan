@@ -1,0 +1,9 @@
+TestlinkCaseName,                                                           TeaCaseName
+
+tp-5704:SERV-STRS-REBT-0001_Warm Boot cycle,                                 powercycle
+tp-5708:SERV-STRS-DCCY-0003_Power - Cold Boot Stress with S5 check -220V,    powercycle
+tp-5400:SERV-STFT-BMC-0004_Restore on AC Power Loss-Last state,              test_chassis_previous_policy
+tp-5401:SERV-STFT-BMC-0005_Restore on AC Power Loss-Power off,               test_chassis_always_off
+tp-5402:SERV-STFT-BMC-0006_Restore on AC Power Loss-Power on,                test_chassis_always_on
+auto-6333:SERV-STFT-IOxx-0001_USB Mechanical check,                          demo_cpu1
+SERV-STRS-test-0007_NIC Stress Test,                                         demo_cpu2

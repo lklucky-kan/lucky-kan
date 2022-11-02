@@ -1,0 +1,8 @@
+usage: memory_cycle.py [-h] [-c COUNT] [-w TESTWAY]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c COUNT, --count COUNT
+                        please input test count
+  -w TESTWAY, --testway TESTWAY
+                        input cycle way default reboot -w dc/reboot

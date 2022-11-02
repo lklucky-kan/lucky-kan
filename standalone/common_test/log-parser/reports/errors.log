@@ -1,0 +1,30 @@
+### Below is SDR error log ###
+CPU1_Temp        | 13h | ns  |  3.1 | No Reading
+CPU1_Tjmax       | F8h | ns  |  3.0 | No Reading
+CPU1_DTS_Temp    | F7h | ns  |  3.0 | No Reading
+CPU1_VR_Temp     | 1Bh | ns  |  3.1 | No Reading
+CPU1_Power       | 62h | ns  |  3.18 | No Reading
+DIMM0G1_Temp     | 15h | ns  |  8.1 | No Reading
+DIMM1G0_Temp     | 19h | ns  |  8.2 | No Reading
+DIMM1G1_Temp     | 1Ah | ns  |  8.3 | No Reading
+DIMM1_VRR_Temp   | 66h | ns  |  3.4 | No Reading
+DIMM1_VRF_Temp   | 67h | ns  |  3.5 | No Reading
+DIMM1_Power      | 69h | ns  |  3.18 | No Reading
+HDD_Rear_Power   | 6Ch | ok  | 29.13 | 0 Watts
+NVMe_Temp        | 46h | ns  | 11.4 | No Reading
+CX5_Temp1        | 41h | ns  | 11.0 | No Reading
+CX5_Temp2        | 42h | ns  | 11.1 | No Reading
+CX5_Temp3        | 43h | ns  | 11.2 | No Reading
+CX5_Temp4        | 44h | ns  | 11.3 | No Reading
+CX5_Temp5        | 45h | ns  | 11.4 | No Reading
+CX6_Temp         | 63h | ns  | 11.5 | No Reading
+Max_Phy_Temp     | E5h | ns  | 11.5 | No Reading
+PVDDQ1_ABCD      | 3Bh | ns  | 14.14 | No Reading
+PVDDQ1_EFGH      | 3Ch | ns  | 14.15 | No Reading
+PVCCSA1          | 37h | ns  | 14.11 | No Reading
+PVCCIN1          | 3Fh | ns  | 14.9 | No Reading
+PVCCANA1         | 3Dh | ns  | 14.7 | No Reading
+### Below is raid error log ###
+     2              0               0               0                0 
+[Lspci]: bus: 8a:00.0, uesta: DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq+ ACSViol-
+[Lspci]: bus: 8a:00.0, cesta: RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+

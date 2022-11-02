@@ -1,0 +1,71 @@
+#######################################################################
+######                     AC Client 端脚本用法                  ######
+#######################################################################
+
+# 参数解析
+Usage: power_cycle.sh 可选参数
+      -d          被测磁盘列表, 不能遗漏'/dev/'，如做 fio 时候只做两个磁盘: -d "/dev/sdb /dev/sdc"
+      -c          执行 power cycle 总圈数，如执行300圈：-c 300
+      -delay      执行重启动作之前的等待时间， 如执行fio, 则为 fio 等待时间 (单位: 分钟)，如：-delay 1
+      -sdr-delay  当 sdr 状态需要时间才能从ns变为ok时, 使用该参数 (单位: 分钟)，默认为0，如：-sdr-delay 3
+      -n, --no    遇错停止脚本，需要默认遇错不停止， 如需遇错停止， 加参数：-n
+      -ping       测试过程中 ping 固定 ip，如测试过程中需要ping多个IP: -ping "10.67.13.67 192.168.2.158"
+
+    Fio 参数:
+        --fio     重启之前对磁盘用 fio 加压, 如重启过程中需要对磁盘做fio， 加此参数
+            fio 默认参数：
+                "--end_fsync=0
+                 --group_reporting
+                 --direct=1
+                 --ioengine=libaio
+                 --time_based
+                 --invalidate=1
+                 --norandommap
+                 --randrepeat=0
+                 --exitall
+                 --size=100%
+                 --readwrite=randrw
+                 --rwmixread=70
+                 --bs=4k
+                 --numjobs=1
+                 --runtime=1200s"
+            如需修改fio某个参数, 使用参数 '-fio-para' 修改fio参数,可修改可追加:
+                -fio-para    如修改bs为128k，并追加参数 --iodepth=8：-fio-para "--bs=128k --iodepth=8"
+
+    重启类型:
+      --reboot       通过 reboot 命令实现 reboot 动作
+      --reset        通过带内 ipmitool raw 0 2 3 执行 Cold Reset
+      --dc           通过带内 ipmitool raw 0 2 2 执行 DC 动作
+      --reboot_dc    执行完 reboot 后执行 dc 动作
+      --ac           通过 PDU 下电后， 再带外通过 BMC 上电
+
+
+执行示例:
+    常规重启测试:
+      500 圈 Reboot:
+        ./power_cycle.sh -c 500 --reboot
+      500 圈 Cold Reset:
+        ./power_cycle.sh -c 500 --reset
+      500 圈 DC:
+        ./power_cycle.sh -c 500 --dc
+      500 圈 Reboot 后 500 圈 DC:
+        ./power_cycle.sh -c 500 --reboot_dc
+      500 圈 AC:
+        ./power_cycle.sh -c 500 --ac
+
+    测试过程中ping固定IP:
+        ./power_cycle.sh -c 500 --reboot -ping "10.67.13.67 192.168.2.158"
+
+    重启时伴随磁盘加压:
+      ./power_cycle.sh -c 500 --reboot -d "/dev/sdb /dev/sdc" --fio
+      如需修改 fio 运行参数, 如将默认 '--bs=4k' 改为 '--bs=128k':
+      ./power_cycle.sh -c 500 --reboot -d "/dev/sdb /dev/sdc" --fio -fio-para '--bs=128k'
+
+    通过非交互式运行, 如重启前等待时间2分钟, sdr 等待时间 1 分钟, 遇错停止脚本:
+      ./power_cycle.sh -c 500 --reboot -d "/dev/sdb /dev/sdc" --fio -delay 2 -sdr-delay 1 -n
+
+
+Report 解析:
+所有测试日志都存放在 reports 目录下:
+Summary Log: reboot.log/ac.log/dc.log ...
+Fail Log:    fail_log/

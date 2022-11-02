@@ -1,0 +1,19 @@
+variables:
+  sut_ip: "172.17.0.183"
+  reference: "reference.msg"
+  requirements: "config.ini"
+  script_cmd: "'python FlashFirmware.py -t bios -c 2 -d 5 --reboot -y'"
+
+
+stages:
+  - cleanup
+
+
+cleanEnv:
+  stage: cleanup
+  script:
+    - echo "hello gitlab"
+  tags:
+    - kl-runner
+  when: always
+

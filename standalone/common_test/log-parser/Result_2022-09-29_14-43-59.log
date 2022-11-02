@@ -1,0 +1,14 @@
+2022-09-29 14:43:59,577 INFO: Clear system log before test begin...
+2022-09-29 14:43:59,577 INFO: Starting clear bmc logs by running cmd:
+    ipmitool sel clear
+2022-09-29 14:43:59,755 INFO: Result:
+Clearing SEL.  Please allow a few seconds to erase.
+
+2022-09-29 14:43:59,755 INFO: Starting clear dmesg logs by running cmd:
+    dmesg -c 2> /dev/null; dmesg -C 2> /dev/null
+2022-09-29 14:43:59,758 INFO: Result:
+
+2022-09-29 14:43:59,758 INFO: Starting clear messages logs by running cmd:
+    cat /dev/null > /var/log/Xorg.0.log; cat /dev/null > /var/log/messages; rm -f $(ls -l /var/log/messages* | awk '{print $NF}' | grep -Ev '^/var/log/messages$')
+2022-09-29 14:43:59,763 INFO: Result:
+

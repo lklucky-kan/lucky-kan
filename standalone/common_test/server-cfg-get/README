@@ -1,0 +1,28 @@
+get server cfg you must input server info into cfg.json
+ex :
+{
+    "palos": {
+        "stage": "EVT",
+        "sku2": {"osip":"192.168.226.129","username":"root","password":"123456"}
+        
+    },
+    "other": {
+        "stage": "EVT",
+        "sku1": {"osip":"192.168.72.129","username":"root","password":"1"},
+        "sku2": {"osip":"192.168.72.128","username":"root","password":"1"}
+    }
+    
+  }
+usage: cfg.py [-h] [-p NAME] [-m MONDB] [-s ADDSSHAG] [-f CSVFILE]
+
+Ex:python3 cfg.py -p palos
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p NAME, --name NAME  please input object name
+  -m MONDB, --mondb MONDB
+                        if want to save to mondb -m True
+  -s ADDSSHAG, --addsshag ADDSSHAG
+  -f CSVFILE, --csvfile CSVFILE
+                        input csv file which one save in mondb ex : "palos-
+                        EVT-SIT-sku1-info.txt:palos-EVT-SIT-sku2-info.txt"

@@ -1,0 +1,26 @@
+usage: nic_fw_updata.py [-h] [-n CYCLE_COUNT] [-i CHECK_IP] [-c CLEARLOG] -u
+                        UPDATA_FILE -d DOWN_FILE
+
+please input the parameter EX :
+python3 nic_fw_updata.py 
+-i 192.168.2.2 
+-u /root/nicfw-up-down/fw-ConnectX5-rel-16_30_1004-MCX512A-ACA_Ax_Bx-
+UEFI-14.23.17-FlexBoot-3.6.301.bin 
+-d /root/nicfw-up-down/fw-
+ConnectX5-rel-16_31_1014-MCX512A-ACA_Ax_Bx-UEFI-14.24.13-FlexBoot-3.6.403.bin
+-n 4 
+-c True
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -n CYCLE_COUNT, --cycle_count CYCLE_COUNT
+                        please input NIC FW updata counts
+  -i CHECK_IP, --check_ip CHECK_IP
+                        please input checkip
+  -c CLEARLOG, --clearlog CLEARLOG
+                        please input -c True to clean log before test default
+                        False
+  -u UPDATA_FILE, --updata_file UPDATA_FILE
+                        please input the NIC up FW file
+  -d DOWN_FILE, --down_file DOWN_FILE
+                        please input the down up FW file

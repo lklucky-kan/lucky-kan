@@ -1,0 +1,62 @@
+CLI Version = 007.2203.0000.0000 May 11, 2022
+Operating system = Linux 4.18.0-240.el8.x86_64
+Controller = 0
+Status = Success
+Description = None
+
+
+PhyInfo :
+=======
+
+------------------------------------------------------------------------------------------------------
+PhyNo SAS_Addr           Phy_Identifier Link_Speed Device_Type  Port Port_valid Description MaxSpeed  
+------------------------------------------------------------------------------------------------------
+    0 0x0000000000000000              0 No limit   -               0          0 -           No limit  
+    1 0x0000000000000000              0 No limit   -               0          0 -           No limit  
+    2 0x0000000000000000              0 No limit   -               0          0 -           No limit  
+    3 0x0000000000000000              0 No limit   -               0          0 -           No limit  
+    4 0x0000000000000000              0 No limit   -               0          0 -           No limit  
+    5 0x0000000000000000              0 No limit   -               0          0 -           No limit  
+    6 0x0000000000000000              0 No limit   -               0          0 -           No limit  
+    7 0x0000000000000000              0 No limit   -               0          0 -           No limit  
+------------------------------------------------------------------------------------------------------
+
+
+Phy Error Counters :
+==================
+
+-----------------------------------------------------------------------
+Phy_No Invld_Dwrd_Cnt Dis_Prt_Err_Cnt Ls_Dwrd_Syn_Cnt Phy_Rst_Prbl_Cnt 
+-----------------------------------------------------------------------
+     0              0               0               0                0 
+     1              0               0               0                0 
+     2              0               0               0                0 
+     3              0               0               0                0 
+     4              0               0               0                0 
+     5              0               0               0                0 
+     6              0               0               0                0 
+     7              0               0               0                0 
+-----------------------------------------------------------------------
+
+Invld_Dwrd_Cnt=Invalid DWord Count
+Dis_Prt_Err_Cnt=Running Disparity Error Count
+Ls_Dwrd_Syn_Cnt=Loss of DWord Synch Count
+Phy_Rst_Prbl_Cnt=Phy Reset problem Count
+
+
+
+CLI Version = 007.2203.0000.0000 May 11, 2022
+Operating system = Linux 4.18.0-240.el8.x86_64
+Controller = 0
+Status = Success
+Description = No Enclosure Found!
+
+
+CLI Version = 007.2203.0000.0000 May 11, 2022
+Operating system = Linux 4.18.0-240.el8.x86_64
+Controller = 0
+Status = Failure
+Description = No drive found!
+
+
+

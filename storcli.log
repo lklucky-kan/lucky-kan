@@ -1,0 +1,36 @@
+Wed Sep 28 16:50:47.406 2022 : CtMain::main processing for command=/ call/ pall show all 
+Wed Sep 28 16:50:47.407 2022 : Entering LinuxControllerExplorer::explore 
+Wed Sep 28 16:50:47.407 2022 : Entering LinuxControllerExplorer::getCtrlCount
+Wed Sep 28 16:50:47.407 2022 : LinuxControllerExplorer::getCtrlCount _hDvr=-1 _hDvrSwr =-1
+Wed Sep 28 16:50:47.407 2022 : LinuxControllerExplorer::explore ctrlCount=1
+Wed Sep 28 16:50:47.407 2022 : returning LinuxControllerExplorer::explore ctrlIdListPtr
+Wed Sep 28 16:50:47.407 2022 : SlItControllerExplorer::explore - Entering
+Wed Sep 28 16:50:47.407 2022 : StorelibItDp::processLibCommand SL request sent
+Wed Sep 28 16:50:47.407 2022 : StorelibItDp::processLibCommand SL responded with retcode=32770
+Wed Sep 28 16:50:47.407 2022 : LinuxMfiDataProvider::fireIoctl DCMD=1010000 mbox.w[0]=1 mbox.w[1]=0 mbox.w[2]=0
+Wed Sep 28 16:50:47.407 2022 : LinuxMfiDataProvider::fireIoctl send_ioctl retcode=-1 cmdStatus=255
+Wed Sep 28 16:50:47.407 2022 : LinuxMfiDataProvider::fireIoctl returning with =-1 errno=9
+Wed Sep 28 16:50:47.407 2022 : StorelibItDp::processLibCommand SL request sent
+Wed Sep 28 16:50:47.407 2022 : StorelibItDp::processLibCommand SL responded with retcode=32770
+Wed Sep 28 16:50:47.407 2022 : StorelibItDp::processLibCommand SL request sent
+Wed Sep 28 16:50:47.407 2022 : StorelibItDp::processLibCommand SL responded with retcode=32770
+Wed Sep 28 16:50:47.407 2022 : CtMain::main command completed with retcode=0
+
+Wed Sep 28 16:52:34.478 2022 : CtMain::main processing for command=/ call/ pall show all 
+Wed Sep 28 16:52:34.478 2022 : Entering LinuxControllerExplorer::explore 
+Wed Sep 28 16:52:34.478 2022 : Entering LinuxControllerExplorer::getCtrlCount
+Wed Sep 28 16:52:34.478 2022 : LinuxControllerExplorer::getCtrlCount _hDvr=-1 _hDvrSwr =-1
+Wed Sep 28 16:52:34.478 2022 : LinuxControllerExplorer::explore ctrlCount=1
+Wed Sep 28 16:52:34.478 2022 : returning LinuxControllerExplorer::explore ctrlIdListPtr
+Wed Sep 28 16:52:34.478 2022 : SlItControllerExplorer::explore - Entering
+Wed Sep 28 16:52:34.478 2022 : StorelibItDp::processLibCommand SL request sent
+Wed Sep 28 16:52:34.478 2022 : StorelibItDp::processLibCommand SL responded with retcode=32770
+Wed Sep 28 16:52:34.478 2022 : LinuxMfiDataProvider::fireIoctl DCMD=1010000 mbox.w[0]=1 mbox.w[1]=0 mbox.w[2]=0
+Wed Sep 28 16:52:34.478 2022 : LinuxMfiDataProvider::fireIoctl send_ioctl retcode=-1 cmdStatus=255
+Wed Sep 28 16:52:34.478 2022 : LinuxMfiDataProvider::fireIoctl returning with =-1 errno=9
+Wed Sep 28 16:52:34.478 2022 : StorelibItDp::processLibCommand SL request sent
+Wed Sep 28 16:52:34.479 2022 : StorelibItDp::processLibCommand SL responded with retcode=32770
+Wed Sep 28 16:52:34.479 2022 : StorelibItDp::processLibCommand SL request sent
+Wed Sep 28 16:52:34.479 2022 : StorelibItDp::processLibCommand SL responded with retcode=32770
+Wed Sep 28 16:52:34.479 2022 : CtMain::main command completed with retcode=0
+

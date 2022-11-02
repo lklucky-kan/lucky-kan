@@ -1,0 +1,85 @@
+Fan1_Status      | 48h | ok  | 29.13 | Device Present
+Fan2_Status      | 49h | ok  | 29.14 | Device Present
+Fan3_Status      | 4Ah | ok  | 29.15 | Device Present
+Fan4_Status      | 4Bh | ok  | 29.16 | Device Present
+Fan5_Status      | 4Ch | ok  | 29.17 | Device Present
+Fan6_Status      | 4Dh | ok  | 29.18 | Device Present
+FAN1_In          | 00h | ok  | 29.1 | 4800 RPM
+FAN1_Ex          | 01h | ok  | 29.2 | 4900 RPM
+FAN2_In          | 02h | ok  | 29.3 | 4800 RPM
+FAN2_Ex          | 03h | ok  | 29.4 | 4800 RPM
+FAN3_In          | 04h | ok  | 29.5 | 5100 RPM
+FAN3_Ex          | 05h | ok  | 29.6 | 4800 RPM
+FAN4_In          | 06h | ok  | 29.7 | 4800 RPM
+FAN4_Ex          | 07h | ok  | 29.8 | 4800 RPM
+FAN5_In          | 08h | ok  | 29.9 | 4800 RPM
+FAN5_Ex          | 09h | ok  | 29.10 | 4900 RPM
+FAN6_In          | 0Ah | ok  | 29.11 | 4900 RPM
+FAN6_Ex          | 0Bh | ok  | 29.12 | 4900 RPM
+ACPI_State       | 5Dh | ok  |  7.0 | S0/G0: working
+BMC_Boot_Up      | 5Ch | ok  |  6.0 | Device Enabled
+BIOS_POST_Finish | F1h | ok  |  7.1 | State Asserted
+Inlet_Temp       | 10h | ok  |  7.0 | 24 degrees C
+Outlet_Temp      | 11h | ok  | 13.0 | 26 degrees C
+CPU0_State       | 53h | ok  |  3.14 | Presence detected
+CPU1_State       | 54h | ok  |  3.15 | 
+CPU0_Temp        | 12h | ok  |  3.0 | 51 degrees C
+CPU1_Temp        | 13h | ns  |  3.1 | No Reading
+CPU0_Tjmax       | F5h | ok  |  3.0 | 94 degrees C
+CPU1_Tjmax       | F8h | ns  |  3.0 | No Reading
+CPU0_DTS_Temp    | F4h | ok  |  3.0 | -44 degrees C
+CPU1_DTS_Temp    | F7h | ns  |  3.0 | No Reading
+CPU0_VR_Temp     | 17h | ok  |  3.0 | 44 degrees C
+CPU1_VR_Temp     | 1Bh | ns  |  3.1 | No Reading
+CPU0_Power       | 61h | ok  |  3.17 | 80 Watts
+CPU1_Power       | 62h | ns  |  3.18 | No Reading
+DIMM0G0_Temp     | 14h | ok  |  8.0 | 40 degrees C
+DIMM0G1_Temp     | 15h | ns  |  8.1 | No Reading
+DIMM1G0_Temp     | 19h | ns  |  8.2 | No Reading
+DIMM1G1_Temp     | 1Ah | ns  |  8.3 | No Reading
+DIMM0_VRR_Temp   | 64h | ok  |  3.2 | 41 degrees C
+DIMM0_VRF_Temp   | 65h | ok  |  3.3 | 37 degrees C
+DIMM1_VRR_Temp   | 66h | ns  |  3.4 | No Reading
+DIMM1_VRF_Temp   | 67h | ns  |  3.5 | No Reading
+DIMM0_Power      | 68h | ok  |  3.17 | 5 Watts
+DIMM1_Power      | 69h | ns  |  3.18 | No Reading
+PCH_Temp         | FEh | ok  |  8.2 | 46 degrees C
+PSU_Inlet_Temp   | 1Fh | ok  |  7.2 | 28 degrees C
+PSU0_Status      | 59h | ok  | 10.5 | Presence detected
+PSU1_Status      | 5Ah | ok  | 10.6 | Presence detected
+PSU0_Temp        | 20h | ok  | 10.0 | 26 degrees C
+PSU1_Temp        | 21h | ok  | 10.1 | 26 degrees C
+PSU0_Power       | 50h | ok  | 10.2 | 80 Watts
+PSU1_Power       | 51h | ok  | 10.3 | 80 Watts
+Fan_Power        | 60h | ok  | 29.13 | 12 Watts
+HDD_Front_Power  | 6Bh | ok  | 29.13 | 14 Watts
+HDD_Rear_Power   | 6Ch | ok  | 29.13 | 0 Watts
+Total_Power      | 52h | ok  | 10.4 | 160 Watts
+NVMe_Temp        | 46h | ns  | 11.4 | No Reading
+CX5_Temp1        | 41h | ns  | 11.0 | No Reading
+CX5_Temp2        | 42h | ns  | 11.1 | No Reading
+CX5_Temp3        | 43h | ns  | 11.2 | No Reading
+CX5_Temp4        | 44h | ns  | 11.3 | No Reading
+CX5_Temp5        | 45h | ns  | 11.4 | No Reading
+CX6_Temp         | 63h | ns  | 11.5 | No Reading
+Max_Phy_Temp     | E5h | ns  | 11.5 | No Reading
+PVDDQ0_ABCD      | 39h | ok  | 14.12 | 1.19 Volts
+PVDDQ1_ABCD      | 3Bh | ns  | 14.14 | No Reading
+PVDDQ0_EFGH      | 3Ah | ok  | 14.13 | 1.19 Volts
+PVDDQ1_EFGH      | 3Ch | ns  | 14.15 | No Reading
+PVCCSA0          | 36h | ok  | 14.10 | 0.84 Volts
+PVCCSA1          | 37h | ns  | 14.11 | No Reading
+PVCCIN0          | 3Eh | ok  | 14.8 | 1.82 Volts
+PVCCIN1          | 3Fh | ns  | 14.9 | No Reading
+PVCCANA0         | 38h | ok  | 14.6 | 0.90 Volts
+PVCCANA1         | 3Dh | ns  | 14.7 | No Reading
+P3V3_STBY        | 32h | ok  | 14.2 | 3.30 Volts
+P5V_STBY         | 31h | ok  |  7.7 | 4.90 Volts
+P1V8_PCH_STBY    | 34h | ok  | 14.3 | 1.79 Volts
+P1V05_PCH_STBY   | 35h | ok  | 14.4 | 1.04 Volts
+PVNN_PCH_STBY    | 33h | ok  | 14.5 | 0.99 Volts
+Chassis_AC_State | 8Fh | ok  |  7.18 | 
+SEL_Status       | 5Fh | ok  |  6.0 | Log area reset/cleared
+IPMI_Watchdog    | F0h | ok  |  6.1 | 
+SystemEvent      | FFh | ok  |  7.17 | 
+

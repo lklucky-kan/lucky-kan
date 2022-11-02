@@ -1,0 +1,14 @@
+{
+    "palos": {
+        "stage": "EVT",
+        "sku1": {"osip":"192.168.226.129","username":"root","password":"123456"},
+        "sku2": {"osip":"192.168.226.128","username":"root","password":"123456"}
+        
+    },
+    "other": {
+        "stage": "EVT",
+        "sku1": {"osip":"192.168.72.129","username":"root","password":"1"},
+        "sku2": {"osip":"192.168.72.128","username":"root","password":"1"}
+    }
+    
+  }

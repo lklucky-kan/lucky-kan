@@ -1,0 +1,10 @@
+2022-09-29 14:45:55,019 INFO: 
+Starting check log in reports folder log...
+
+2022-09-29 14:45:55,020 INFO: SDR log check FAIL
+2022-09-29 14:45:55,025 INFO: sel log check PASS
+2022-09-29 14:45:55,025 INFO: raid log check FAIL
+2022-09-29 14:45:55,025 INFO: raid log check PASS
+2022-09-29 14:45:55,025 INFO: dmesg log check PASS
+2022-09-29 14:45:55,025 INFO: messages log check PASS
+2022-09-29 14:45:56,706 INFO: Lspci info check FAIL

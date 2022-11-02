@@ -1,0 +1,29 @@
+TestProject: TestProjectName
+TestPlan: TestPlanName
+Server:
+    ip: 192.168.1.1
+    user: root
+    password: abc123
+    os: linux
+    bmc_ip: 192.168.1.2
+    bmc_user: bmc_user1
+    bmc_password: bmc_pass1
+
+PDU:
+    ip: 10.2.1.1
+    user: apc
+    password: apc
+    ac_port: 10
+Cases:
+ - name: SERV-STRS-test-0004_Storage_IOStress
+   args: -c 500 --reboot tool=memtest tool_args='-l 100 -t now'
+ - name: SERV-STRS-test-0007_NIC Stress Test
+   args: loop=10 tool_path=/xx/xxy
+ - name: SERV-STRS-REBT-0001_Warm Boot cycle
+   args: -c 500 --reboot  --system 
+ - name: SERV-STRS-REBT-0002_带外reboot cycle
+   args: -c 500 --reboot  --system
+ - name: SERV-STRS-DCCY-0003_Power
+   args: -c 500 --reboot  --system 
+   
+  

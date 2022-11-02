@@ -1,0 +1,38 @@
+netperf_udp_test.py
+use:
+python3 standalone/network/netperf_udp_test.py 
+-i '192.168.2.129-192.168.2.242' -s 'user:root password:1' -c 'user:root password:1' -d 30 -t 3 -l '64 512'"
+-i serverip_clientip ex:192.168.32.128 is serverip 192.168.32.129 is clientip, if need other netserver netperf -i
+'192.168.32.128-192.168.32.129 192.168.32.131-192.168.32.132'
+-s serverinfo 
+-c clientinfo
+-d test time 
+-t test threads 
+-l netperf pkg length 
+
+roce_test.py
+use:
+python3 standalone/network/roce_test.py -i '192.168.2.242-192.168.2.129 mlx5_0-mlx5_0' -t 'write read' -s 'user:root password:1' 
+-c 'user:root password:1' -a 'bw lat' -g 0
+-i server-clientip serverdevicename-clientdevicename if need test other port add -i 
+'192.168.2.242-192.168.2.129 mlx5_0-mlx5_0 192.168.2.241-192.168.2.128 mlx5_1-mlx5_1'
+-t test type means ib_write ib_read
+-s serverinfo
+-c clientinfo
+-a means ib_read_lat/bw ib_write_lat/bw
+-g gid
+
+nic_bond_function.py
+use:
+python3 standalone/network/nic_bond_function.py -n "eth0 eth1" -b bondX -i bondip
+-n which port to bond 
+-b bondtype ex:bond0 bond1 bond2
+-i bondip ex:192.168.xxx.xxx
+
+wol_cycle.py
+use:
+python3 wol_on.py -c 3 -n 10.49.29.201 -u root -p 1 -N 10.49.29.203 -U admin -P admin -W "10.49.29.255 b0:7b:25:af:1d:a0"
+-c test cycle counts
+-n test dut osip ,-u user, -p password
+-N test dut bmcip ,-U bmcuser, -P bmcpassword
+-W mac address

@@ -1,0 +1,8 @@
+{
+    "cesta": {
+        "8a:00.0": "RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+"
+    },
+    "uesta": {
+        "8a:00.0": "DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq+ ACSViol-"
+    }
+}
